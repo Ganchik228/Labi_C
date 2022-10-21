@@ -3,10 +3,9 @@
 int main()
 {
     double x,f;
-    int i=1;
     printf("\tx\t f(x)\n");
     printf("---------------------------\n");
-    while(i<=10)
+    for(int i=1;i<=10;i++)
     {
         scanf("%lf",&x);
         printf("%lf\t",x);
@@ -14,19 +13,16 @@ int main()
         {
             f=cos(x)*(pow(M_E,pow(x,-2)));
             printf("%lf\n",f);
-            i++;
 
         }
         else if (x>1 && x<= 2)
         {
             f=log(x+1)-sqrt(4-(x*x));
             printf("%lf\n",f);
-            i++;
         }
         else
         {
             printf("x ne podhodit\n");
-            i++;
         }
     }
     return 0;
