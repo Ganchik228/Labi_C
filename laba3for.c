@@ -3,7 +3,6 @@
 int main()
 {
     double x,f,h,s;
-    int i=0;
     x=0;
     printf("Vvedite shag 0<h<=2 \n");
     scanf("%lf",&h);
@@ -11,20 +10,15 @@ int main()
     if (h>0 && h<=2)
     {
     printf("\tx\tf(x)\n");
-    printf("-----------------------\n");
-    while(i<=s)
+    printf("--------------------------\n");
+    for(int i=0;i<=s;i++)
     {
         x=i*h;
-        if(x>=0.00 && x<=1.00)
-        
+        if(x>=0 && x<=1)
             f=cos(x)*exp(pow(-x,2));
-        
         else
-        
-            f=log(x+1.00)-sqrt(4.00-x*x);
-        
+            f=log(x+1)-sqrt(4-x*x);
         printf("%lf\t%lf\n",x,f);
-        i++;
     }
     }
     else 
