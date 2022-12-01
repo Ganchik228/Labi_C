@@ -19,5 +19,6 @@ int main()
  g=2;
  printf ("vvedite chislo\t");
  scanf("%u",&n);
-printf("cycle result=%d\nRec result=%d\n",cyc(n),rec(n,g));
+printf("cycle result=%d\nRec result=%d\n",cyc(n),rec(n,g));\
+return 0;
 }
