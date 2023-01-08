@@ -69,7 +69,6 @@ int main()
                 print = 0;
              }
         }
-        
         if (print == 1) {
             if(c!='~'){
                 printf("%c", c);

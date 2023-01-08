@@ -5,21 +5,26 @@
 
 int main()
 {
-    char str[]="Chin chopa 123 fresh meat";
+    char str[255];
+    fgets(str,255,stdin);
     int i=0,sim=1,slv=1;
+    while(str[i]==' ' || str[i]==',' || str[i]=='.')
+    {
+        i++;
+    }
     while(str[i]!='\n')
     {
         if (sim==slv)
             {
                 printf("%c",str[i]);
             }
-        if (str[i]==' ')
+        if (str[i]==' ' || str[i]==',' || str[i]=='.') 
             {
                 slv++;
                 sim=0;
-                sim++;
-                i++;
             }
+            sim++;
+            i++;
     }
     return 0;
     }
